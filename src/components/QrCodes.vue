@@ -1,12 +1,19 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    
+    <qr-code 
+      text="React is better than Vue"
+      size="300"
+      color="#000000"
+      bg-color="#ffffff" 
+      error-level="L">
+    </qr-code>
+  </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'QrCodes',
   props: {
     msg: String
   }
