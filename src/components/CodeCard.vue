@@ -23,7 +23,7 @@ export default {
     },
     data(){
         return {
-            size: 200
+            size: Number(200)
         }
     }
 }

@@ -4,7 +4,7 @@
       <p>{{myName}}</p>
       <qr-code 
         :text=myName
-        size=200
+        :size=size
         color="#000000"
         bg-color="#ffffff" 
         error-level="L">
@@ -39,7 +39,8 @@ export default {
   data(){
     return {
       myName: "William Berlin",
-      cryptos: []
+      cryptos: [],
+      size: Number(200)
     }
   },
   mounted(){
@@ -66,6 +67,7 @@ export default {
     }).catch(err => {
       console.log(err);
     });
+
     // cardano
     axios.get(`https://data.messari.io/api/v1/assets/cardano/metrics`)
     .then(res => {
