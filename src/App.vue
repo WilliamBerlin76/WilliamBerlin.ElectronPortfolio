@@ -1,18 +1,21 @@
 <template>
   <div id="app">
     <h1>WilliamBerlin.ElectronPortfolio</h1>
+    <ScreenshotButton />
     <QrCodes/>
     <TwitterFeeds/>
   </div>
 </template>
 
 <script>
-import QrCodes from './components/QrCodes.vue'
+import ScreenshotButton from "./components/ScreenshotButton.vue";
+import QrCodes from "./components/QrCodes.vue";
 import TwitterFeeds from "./components/TwitterFeeds.vue";
 
 export default {
   name: 'App',
   components: {
+    ScreenshotButton,
     QrCodes,
     TwitterFeeds
   }

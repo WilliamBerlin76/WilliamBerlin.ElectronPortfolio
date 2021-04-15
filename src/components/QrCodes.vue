@@ -40,7 +40,7 @@ export default {
     return {
       myName: "William Berlin",
       cryptos: [],
-      size: Number(200)
+      size: Number(100)
     }
   },
   mounted(){

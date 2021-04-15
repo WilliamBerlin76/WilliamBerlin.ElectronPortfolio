@@ -24,7 +24,7 @@ export default {
     justify-content: space-around;
 }
 .feed-container{
-    height: 500px;
+    height: 300px;
     overflow: auto;
 }
 
