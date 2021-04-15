@@ -1,7 +1,7 @@
 <template>
   <div class="codes-container">
     <div class="name-card">
-      <p>{{myName}}</p>
+      <p class="my-name">{{myName}}</p>
       <qr-code 
         :text=myName
         :size=size
@@ -10,14 +10,18 @@
         error-level="L">
       </qr-code>
     </div>
-    <div class="code-cards" >
-      <CodeCard 
-        :name=item.name
-        :price=item.price
-        v-for="item in cryptos" 
-        v-bind:key="item.name"
-      />
+    <div class="crypto-cards-container">
+      <h3 class="crypto-cards-title">Cryptocurrency Prices</h3>
+      <div class="code-cards" >
+        <CodeCard 
+          :name=item.name
+          :price=item.price
+          v-for="item in cryptos" 
+          v-bind:key="item.name"
+        />
+      </div>
     </div>
+    
     
   </div>
 </template>
@@ -82,7 +86,6 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .code-cards{
   display: flex;
@@ -93,6 +96,20 @@ export default {
   display:flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 20px;
+}
+.my-name{
+  font-size: 1.5rem;
+}
+.crypto-cards-container{
+  color: #ffffff;
+  background: #72BB44;
+  padding: 5px 0 25px;
+  box-shadow: 0 0 5px 5px #72BB44;
+}
+.crypto-cards-title{
+  font-size: 1.6rem;
+  margin-bottom: 25px;
 }
 h3 {
   margin: 40px 0 0;

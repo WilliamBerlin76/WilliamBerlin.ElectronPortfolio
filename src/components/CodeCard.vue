@@ -1,7 +1,7 @@
-<template class="card">
-    <div>
-        <p>{{name}}</p>
-        <p>{{price}}</p>
+<template>
+    <div class="card">
+        <span class="currency-name">{{name}}</span>
+        <p class="price">{{price}}</p>
         <qr-code 
             :text=price
             :size=size
@@ -31,7 +31,13 @@ export default {
 
 <style scoped>
 .card{
-    width:25%
+    width:25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.currency-name{
+    font-size: 1.5rem
 }
 
 </style>
