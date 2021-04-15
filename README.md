@@ -1,24 +1,8 @@
-# greenfire-electron-project
+# WilliamBerlin.ElectronPortfolio
 
-## Project setup
-```
-npm install
-```
+## Operating System
+Microsoft Windows [Version 10.0.19041.867]
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Node version
+v12.14.0
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

@@ -21,8 +21,6 @@
         />
       </div>
     </div>
-    
-    
   </div>
 </template>
 
@@ -104,12 +102,12 @@ export default {
 .crypto-cards-container{
   color: #ffffff;
   background: #72BB44;
-  padding: 5px 0 25px;
+  padding: 3px 0 25px;
   box-shadow: 0 0 5px 5px #72BB44;
 }
 .crypto-cards-title{
   font-size: 1.6rem;
-  margin-bottom: 25px;
+  margin: 25px;
 }
 h3 {
   margin: 40px 0 0;

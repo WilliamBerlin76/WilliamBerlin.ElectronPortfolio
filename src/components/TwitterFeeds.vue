@@ -5,14 +5,14 @@
             <div class="feed-block">
                 <span class="feed-org-title">BBCAfrica</span>
                 <div class="feed-container">
-                    <TwitterFeed class="feed" src="https://twitter.com/BBCAfrica?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" dark=true></TwitterFeed>
+                    <TwitterFeed class="feed" src="https://twitter.com/BBCAfrica?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" :dark=dark></TwitterFeed>
                 </div>
             </div>
 
             <div class="feed-block">
                 <span class="feed-org-title">Ethereum</span>
                 <div class="feed-container">
-                    <TwitterFeed class="feed" src="https://twitter.com/ethereum?lang=en" dark=true></TwitterFeed>
+                    <TwitterFeed class="feed" src="https://twitter.com/ethereum?lang=en" :dark=dark></TwitterFeed>
                 </div>
             </div>
         </div>
@@ -23,17 +23,22 @@
 <script>
 export default {
     name: "TwitterFeeds",
+    data(){
+        return {
+            dark: Boolean(true)
+        }
+    }
 }
 </script>
 
 <style scoped>
 .feeds-title{
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     font-size: 1.6rem;
 }
 .feeds{
     width: 80%; 
-    margin: 25px auto;
+    margin: 10px auto;
     display: flex;
     justify-content: space-around;
 }
