@@ -13,4 +13,4 @@ v12.14.0
 
 2. Run `npm install` inside the root directory of this project
 
-3. Run the project using npm run electron:serve
+3. Run the project using `npm run electron:serve`
