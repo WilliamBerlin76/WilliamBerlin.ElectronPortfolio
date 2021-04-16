@@ -37,9 +37,10 @@ export default {
     font-size: 1.6rem;
 }
 .feeds{
-    width: 80%; 
+    width: 100%; 
     margin: 10px auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 .feed-org-title{
@@ -48,7 +49,7 @@ export default {
 }
 .feed-container{
     height: 300px;
-    width: 400px;
+    width: 350px;
     overflow: auto;
 }
 

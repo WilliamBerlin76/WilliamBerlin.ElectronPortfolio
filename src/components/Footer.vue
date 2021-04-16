@@ -35,6 +35,7 @@ export default {
 <style scoped>
 .link-container{
     display: flex;
+    flex-wrap:wrap;
     justify-content: space-around;
     padding: 5px 0;
     background: #72BB44;
@@ -45,7 +46,6 @@ export default {
 .link-item{
     color: #ffffff;
     text-decoration: none;
-
 }
 .link-item:hover{
     color: #43438b
