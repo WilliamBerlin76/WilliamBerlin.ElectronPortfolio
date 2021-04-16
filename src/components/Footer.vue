@@ -37,7 +37,7 @@ export default {
     display: flex;
     flex-wrap:wrap;
     justify-content: space-around;
-    padding: 5px 0;
+    padding: 8px 0;
     background: #72BB44;
     box-shadow: 0 0 5px 5px #72BB44;
     width: 100%;
@@ -46,6 +46,7 @@ export default {
 .link-item{
     color: #ffffff;
     text-decoration: none;
+    font-size: 1.2rem;
 }
 .link-item:hover{
     color: #43438b
